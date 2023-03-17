@@ -24,4 +24,4 @@ jobs:
         # This ID should come from the CI job you saved in ACCELQ application
         jobId: "23"
         # Run Params(optional) should be JSON string form example: '{"username": "John Todd", "password": "bxW&=UVw"}'
-        runParam: "${{ format('{\"URL\":\"{0}\",\"isScratchOrg\":\"true\"}', steps.TEST_VARIABLE) }}"
+        runParam: "${{ format('{\"URL\":\"{0}\",\"isScratchOrg\":\"true\"}', TEST_VARIABLE) }}"
