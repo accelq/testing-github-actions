@@ -12,7 +12,7 @@ jobs:
       run: |
           echo "{\"status\":0,\"result\":{\"orgId\":\"00D530000006G86EAE\",\"url\":\"https://platform-site-4982-dev-ed.scratch.my.salesforce.com/secur/frontdoor.jsp?sid=00D530000006G86!AQwAQDO3uIU0UFv9.e_RGQD8bhk9b6o4amThKeTNUlLHvnIw5pHwQpEH5qr3ajOIXbCjPfbrb0Wwx.eU4440PXa8QcxeT2ro\",\"username\":\"test-wuoercs85plc@example.com\"}}"
     - name: Test
-      run: echo "${{ steps.sfdx_temp_auth_url.result }}"
+      run: echo "${{ toJSON(steps.sfdx_temp_auth_url) }}"
 #     - name: ACCELQ Github-A Connect
 #       # You may pin to the exact commit or the version.
 #       # uses: accelq/accelq-ci-github-actions@953369c4991322d0eb25d68f449a7d8c574c58d1
